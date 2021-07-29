@@ -69,49 +69,10 @@ function insertContent (event){
     btnRegister.addEventListener('click', insertContent)
 
 
-// Cria elementos caso a tela possua 375px ou menos
-function createElementsScreen375px (){
-    const widthScreen = screen.width;
-    const visibleContent = document.querySelector('.visible');
-       
-    if (widthScreen <= 375) {
-        const inputEmail = document.createElement('input');
-        const inputPwd = document.createElement('input');
-        const buttonEnter = document.createElement('button');
-        const buttonNewAccount = document.createElement('button');
-        const paragraphPwd = document.createElement('p');
-        const paragraphOr = document.createElement('p');
-        inputEmail.className = 'inputEmailMobile';
-        inputEmail.placeholder = 'Número de celular ou email';
-        inputPwd.className = 'inputPwd';
-        inputPwd.placeholder = 'Senha';
-        buttonEnter.className = 'btnEnterMobile';
-        buttonEnter.innerText = 'Entrar';
-        paragraphOr.className = 'pOrMobile';
-        paragraphOr.innerHTML = 'ou';
-        buttonNewAccount.className = 'btnNewAccountMobile';
-        buttonNewAccount.innerText = 'Cria nova conta';
-        paragraphPwd.className = 'pForgotMobile';
-        paragraphPwd.innerHTML = 'Esqueceu a senha?';
-        visibleContent.appendChild(inputEmail);
-        visibleContent.appendChild(inputPwd);
-        visibleContent.appendChild(buttonEnter);
-        visibleContent.appendChild(paragraphOr);
-        visibleContent.appendChild(buttonNewAccount);
-        visibleContent.appendChild(paragraphPwd);
-        
-    }
-
-}
-
-
-
-
     
 
 window.onload = () => {
-    alertLogin();
-    createInputGenrer();
-    removeInputGenrer();
-    createElementsScreen375px();
+    alertLogin ();
+    createInputGenrer ();
+    removeInputGenrer ();
 }

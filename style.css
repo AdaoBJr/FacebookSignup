@@ -1,190 +1,183 @@
-/* Requisito 1 */
 * {
-  font-family: Helvetica, Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+    font-family: 'Helvitica', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
 }
-
+#facebook-slogan{
+    font-size: 1.25em;
+    font-weight: 800;
+    line-height: 29px;
+    width: 450px;
+    zoom: 1.05;
+}
 .top-bar {
-  background-color: rgb(66, 103, 178);
-  width: 100%;
-  height: 81px;
-  display: flex;
-  justify-content: space-between;
+    background-color: rgb(66, 103, 178);
+    background-color: rgb(59, 89, 152);
+    width: 100%;
+    height: 81px;
+    display: flex;
+    justify-content: space-around;
 }
-
-.top-bar img {
-  align-self: center;
-}
-
-/* Requisito 2 */
 .facebook-logo {
-  margin-top: 13px;
+    align-self: flex-end;
+    margin-bottom: 5px;
 }
-
-/* Requisito 3 */
 .facebook-login {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-top: 5px;
+    display: flex;
+    color: #fff;
+    font-size: small;
 }
-
 .form-group {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0 5px;
-  color: white;
-  font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
 }
-
+.form-group input {
+    margin: 2px 8px;
+    padding: 3px;
+    border: 1px solid black;
+}
 .form-group label {
-  align-self: start;
-  padding-bottom: 4px;
+    margin: 2px 8px;
 }
-
+.form-group a {
+    margin: 2px 8px;
+    text-decoration: none;
+    color: #fff;
+    opacity: 0.7;
+}
 .form-control {
-  display: flex;
-  align-self: flex-end;
-  margin-bottom: 27px;
+    align-self: flex-end;
 }
-
-.form-control button {
-  background-color: rgb(66, 103, 178);
-  border: 1px solid;
-  border-color: rgb(41, 72, 125);
-  color: white;
-  padding: 3px 5px;
-  font-weight: 800;
-  font-size: 12px;
+.btn-enter:hover {
+    background-color:#02448a;
+    border: 1px solid #045cbb;
+    color:#fff;
+    cursor: pointer;
 }
+.btn-enter {
+    color:#fff;
+    background-color:#007bff7c;
+    padding:3px 5px;
+    margin-bottom: 27px;
+    margin-left: 8px;
+    font-size: small;
+    font-weight: bold;
+    border: 1px solid #045cbb;
 
-a {
-  text-decoration: none;
-  opacity: 0.7;
-  color: rgb(156, 180, 216);
-  padding-top: 6px;
-  align-self: start;
 }
-
-a:hover {
-  text-decoration: underline;
-}
-
-#user-email-phone {
-  margin-bottom: 20px;
-}
-
 .main-content {
-  display: flex;
-  justify-content: flex-start;
-  margin-top: 20px;
-  background: linear-gradient(white, rgb(211, 216, 232));
-  width: 100%;
-  height: 700px;
+    background: linear-gradient(white, rgb(211, 216, 232));
+    margin-top: 40px;
+    display: flex;
+    justify-content: flex-start;
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 700px;
 }
-
-/* Requisito 9 */
 .left-content {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: flex-start;
-  align-items: center;
-  width: 800px;
+    color: rgb(14, 56, 95);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    width: 800px;
+    /* border: 2px solid blue; */
 }
-
-.facebook-slogan {
-  color: rgb(14, 56, 95);
-  font-size: 1.25em;
-  font-weight: 800;
-  line-height: 29px;
-  width: 450px;
-  zoom: 1.05;
-}
-
-/* Requisito 10 */
 .right-content {
-  width: 300px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    width: 300px;
+    /* border: 2px solid green; */
 }
-
-#name , #lastname {
-  box-sizing: border-box;
-  width: 147px;
-  padding: 8px 10px;
-  border-radius: 5px;
+.right-content h1 {
+    color: rgb(51, 51, 51);
+    font-size: 36px;
+    align-self: flex-start;
 }
-
-.data {
-  box-sizing: border-box;
-  height: 30px;
-  width: 100%;
-  border-radius: 5px;
+.quick-easy {
+    color: rgb(29, 33, 41);
+    font-size: 19px;
+    align-self: flex-start;
+    margin: 10px 10px 10px 0;
 }
-
-.right-content input {
-  padding: 8px 10px;
-  font-size: 18px;
-  border: solid 1px rgb(189, 199, 216);
-  margin-bottom: 5px;
-  height: 39px;
+.formData {
+    display: flex;
+    flex-flow: column nowrap;
 }
-
-h1 {
-  font-size: 36px;
-  color: #333;
-  font-weight: 600;
+.formData input {
+    border: 1px solid rgb(191, 200, 215);
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 8px 10px;
+    margin: 5px;
 }
-
-#right-content-header {
-  margin-bottom: 20px;
+.inputName {
+    display: flex;
 }
-
-/* Requisito 15 */
-.birthdate {
-  color: rgb(133, 137, 145);
-  font-weight: 600;
-  font-size: 1.08em;
+.inputName #firstname {
+    width: 30%;
 }
-
-.birthdate label {
-  margin: 10px 8px 0;
+.inputName #lastname {
+    width: 70%;
 }
-
-#label-gender , #label-birthdate {
-  display: block;
+.inputGenderP #inputP {
+    width: 90%;
 }
-
-/* Requisito 16 */
-.genders #label-gender {
-  color: rgb(133, 137, 145);
-  font-weight: 600;
-  font-size: 1.08em;
+.inputPhoneEmail #phone_email{
+    width: 90%;
 }
-
-.inputs_labels_genders label {
-  font-size: 0.95em;
-  color: rgb(27, 30, 36);
+.inputNewPwd #pwd{
+    width: 90%; 
 }
-
-/* Requisito 17 */
+.inputBirthdate #inputDate {
+    width: 90%; 
+} 
+.inputBirthdate {
+    display: flex;
+    flex-flow: column nowrap;
+    color: rgb(133, 137, 145);
+    font-weight: bold;
+    font-size: 1.08em;
+}
+.inputBirthdate label {
+    margin: 10px 8px 0px 8px;
+}
+.inputGender #label-gender {
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 10px 8px 8px 8px;
+    color: rgb(133, 137, 145);
+    font-weight: bold;
+    font-size: 1.08em;
+}
+.genders label{
+    font-size: 1.04em;
+    color: rgb(27, 30, 36);
+}
+.genders {
+    margin-left: 2px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
 .userTerms {
-  margin-top: 18px;
-  width: 320px;
-  color: rgb(133, 137, 145);
-  font-size: 0.7em;
-  line-height: 14px;
+    margin-top: 18px;
+    width: 320px;
+    color: rgb(133, 137, 145);
+    font-size: 0.7em;
+    line-height: 14px;
 }
-
 .userTerms span {
-  color: rgb(97, 97, 213);
+    color: rgb(97, 97, 213);
 }
-
-.btnSumit {
-  display: flex;
-  justify-content: flex-start;
+.btnSumit  {
+    display: flex;
+    justify-content: flex-start;
 }
-
 .btnSumit button {
   background: linear-gradient(#67ae55, #578843);
   border: 1px solid #2b7d07;
@@ -198,15 +191,95 @@ h1 {
   text-shadow: 0.7px 0.7px black;
   width: 200px;
 }
-
-.form-control button:hover {
-  background-color: darkslateblue;
-  border: 1px solid;
-  border-color: rgb(41, 72, 125);
-  cursor: pointer;
-}
-
 .btnSumit button:hover {
   background: linear-gradient(#67ae55e0, #578843);
   border: 1px solid #2b7d07;
+}
+@media screen and (max-width: 375px) {
+    header img {
+        display: none;
+    }
+    .facebook-login {
+        display: none;
+    }
+    .top-bar {
+        height: 44px;
+        background: url(imgs/facebook-logo-mobile.png)no-repeat center;
+        background-color: rgb(59, 89, 152);
+        border: 1px solid orange;
+    }
+    .main-content {
+        visibility: hidden;
+        background: linear-gradient(white, rgb(211, 216, 232));
+    }
+
+     .visible {
+        visibility:visible;
+        position: absolute;
+        left: 8%;
+        top: 50px;
+    }
+
+    .visible input {
+    border: 1px solid rgb(203, 203, 203);
+    background-color: rgb(243, 245, 246);
+    font-size: 18px;
+    height: 35px;
+    padding: 8px 10px;
+    width: 80%;
+    }
+
+    .visible input::placeholder{
+        font-size: 0.85em;
+    }
+
+   .inputEmailMobile {
+        margin: 30px 8px 0px 8px;
+        border-radius: 5px 5px 0px 0px;
+    }
+    
+    .inputPwd {
+        margin: 0px 8px 0px 8px;
+        border-radius: 0px 0px 5px 5px;
+    }
+
+    .btnEnterMobile {
+        background-color: rgb(22, 112, 235);
+        border: 1px solid rgb(39, 111, 213);
+        color: white;
+        font-weight: 600;
+        font-size: 0.9em;
+        width: 87%;
+        height: 37px;
+        margin: 10px 8px;
+        border-radius: 5px;
+    }
+
+    .pOrMobile {
+        color: rgba(27, 30, 36, 0.892);
+        font-size: 0.9em;
+        text-align: center;
+    }
+
+    .btnNewAccountMobile {
+        background-color: rgb(21, 153, 32);
+        border: 1px solid rgb(43, 167, 53);
+        color: white;
+        font-weight: 600;
+        font-size: 0.9em;
+        position: absolute;
+        left: 100px;
+        width: 40%;
+        height: 36px;
+        margin: 30px 8px;
+        border-radius: 5px;
+    }
+
+    .pForgotMobile {
+        color: rgb(109, 141, 191);
+        font-size: 0.87em;
+        position: absolute;
+        left: 117px;
+        top: 290px;
+    }
 }

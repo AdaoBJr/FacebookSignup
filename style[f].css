@@ -1,0 +1,276 @@
+* {
+  font-family: Helvetica, 'Lucida Sans', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+
+  /* box-sizing: border-box; */
+}
+
+#facebook-slogan {
+  font-size: 1.25em;
+  font-weight: 800;
+  line-height: 29px;
+  width: 450px;
+  zoom: 1.05;
+}
+
+.top-bar {
+  background-color: rgb(66, 103, 178);
+  background-color: rgb(59, 89, 152);
+  width: 100%;
+  height: 81px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.facebook-logo {
+  align-self: flex-end;
+  margin-bottom: 5px;
+
+  /* width: 195px;
+height: 61px; */
+}
+
+.facebook-login {
+  display: flex;
+  color: white;
+  font-size: small;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.form-group input {
+  margin: 2px 8px;
+  padding: 3px;
+  border: 1px solid black;
+}
+
+.form-group label {
+  margin: 2px 8px;
+}
+
+.form-group a {
+  margin: 2px 8px;
+  text-decoration: none;
+  color: white;
+  opacity: 0.7;
+}
+
+.form-control {
+  align-self: flex-end;
+}
+
+.btn-enter:hover {
+  background-color: #02448a;
+  border: 1px solid #045cbb;
+  color: white;
+  cursor: pointer;
+}
+
+.btn-enter {
+  color: white;
+  background-color: #007bff7c;
+  padding: 3px 5px;
+  margin-bottom: 27px;
+  margin-left: 8px;
+  font-size: small;
+  font-weight: bold;
+  border: 1px solid #045cbb;
+}
+
+.main-content {
+  background: linear-gradient(white, rgb(211, 216, 232));
+  margin-top: 40px;
+  display: flex;
+  justify-content: flex-start;
+  /* border: 2px solid red; */
+  width: 100%;
+  height: 700px;
+}
+
+.left-content {
+  color: rgb(14, 56, 95);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  width: 800px;
+  /* border: 2px solid blue; */
+}
+
+.right-content {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  width: 300px;
+  /* border: 2px solid green; */
+}
+
+.right-content h1 {
+  color: rgb(51, 51, 51);
+  font-size: 36px;
+  align-self: flex-start;
+}
+
+.quick-easy {
+  color: rgb(29, 33, 41);
+  font-size: 19px;
+  align-self: flex-start;
+  margin: 10px 10px 10px 0;
+}
+
+.formData {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.formData input {
+  border: 1px solid rgb(191, 200, 215);
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 8px 10px;
+  margin: 5px;
+}
+
+.inputName {
+  display: flex;
+}
+
+.inputName #firstname {
+  width: 30%;
+}
+
+.inputName #lastname {
+  width: 70%;
+}
+.inputGenderP #inputP {
+  width: 90%;
+}
+
+.inputPhoneEmail #phone_email {
+  width: 90%;
+}
+
+.inputNewPwd #pwd {
+  width: 90%;
+}
+
+.inputBirthdate #inputDate {
+  width: 90%;
+}
+
+.inputBirthdate {
+  display: flex;
+  flex-flow: column nowrap;
+  color: rgb(133, 137, 145);
+  font-weight: bold;
+  font-size: 1.08em;
+}
+
+.inputBirthdate label {
+  margin: 10px 8px 0;
+}
+
+.inputGender #label-gender {
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 10px 8px 8px;
+  color: rgb(133, 137, 145);
+  font-weight: bold;
+  font-size: 1.08em;
+}
+
+.genders label {
+  font-size: 1.04em;
+  color: rgb(27, 30, 36);
+}
+
+.genders {
+  margin-left: 2px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
+.userTerms {
+  margin-top: 18px;
+  width: 320px;
+  color: rgb(133, 137, 145);
+  font-size: 0.7em;
+  line-height: 14px;
+}
+
+.userTerms span {
+  color: rgb(97, 97, 213);
+}
+
+.btnSumit {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.btnSumit button {
+  background: linear-gradient(#67ae55, #578843);
+  border: 1px solid #2b7d07;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 19px;
+  font-weight: 600;
+  height: 40px;
+  margin-top: 1em;
+  text-shadow: 0.7px 0.7px black;
+  width: 200px;
+}
+
+.btnSumit button:hover {
+  background: linear-gradient(#67ae55e0, #578843);
+  border: 1px solid #2b7d07;
+}
+
+@media screen and ( max-width: 375px ) {
+  header img {
+    display: none;
+  }
+
+  .facebook-login {
+    display: none;
+  }
+
+  .top-bar {
+    height: 44px;
+    background: url(imgs/facebook-logo-mobile.png) no-repeat center;
+    background-color: rgb(59, 89, 152);
+    /* border: 1px solid orange; */
+  }
+
+  .main-content {
+    visibility: hidden;
+    background: linear-gradient(white, rgb(211, 216, 232));
+  }
+
+  .visible {
+    visibility: visible;
+    position: absolute;
+    left: 0;
+    top: 50px;
+  }
+
+  .visible #phone_email {
+    width: 100%;
+  }
+
+  /* .visible input {
+  border: 1px solid rgb(191, 200, 215);
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 8px 10px;
+  margin: 10px 30px 0px 30px ;
+   } */
+
+}
