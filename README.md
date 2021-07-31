@@ -1,4 +1,4 @@
-<p align="center"><img width='150px' src='https://img-premium.flaticon.com/png/512/2274/premium/2274361.png?token=exp=1627565899~hmac=1afda99e18816e9d25bb6b8dafa7a8d0' />
+<p align="center"><img width='150px' src='https://github.com/AdaoBJr/FacebookSignup/blob/master/imgs/work6.png' />
 <h1 align="center"> Facebook Signup Project </h1>  </p>
 
 <h2 align="center">GitHub Pages:</h2>
